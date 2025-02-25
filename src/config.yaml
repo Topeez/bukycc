@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Buky - smrťák vašeho odpadu
+  site: 'https://buky.cc'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Buky - smrťák vašeho odpadu
+    template: '%s — Buky.cc'
+  description: "Profesionální čištění a renovace odpadního potrubí bez sekání do zdí! Nabízíme tlakové a strojní čištění, frézování kanalizace, kamerový monitoring a trasování potrubí. Moderní bezvýkopová technologie umožňuje rychlou a efektivní opravu odpadního systému v panelových domech, školách, hotelech, podnicích i průmyslových objektech. Zajistíme minimální nepořádek a maximální životnost vašeho potrubí. Kontaktujte nás pro odborné řešení bez zbytečného stresu!"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Buky - smrťák vašeho odpadu
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: cs
   textDirection: ltr
 
 apps:
@@ -69,4 +69,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

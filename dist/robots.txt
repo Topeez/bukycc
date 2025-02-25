@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://buky.cc/sitemap-index.xml

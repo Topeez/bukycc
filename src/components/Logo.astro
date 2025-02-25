@@ -1,9 +1,15 @@
 ---
 import { SITE } from 'astrowind:config';
+import Logo from "~/assets/images/buky_smrtak_logo.png"
+import { Image } from 'astro:assets';
 ---
 
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-sm font-bold text-gray-900 whitespace-nowrap dark:text-white flex flex-row items-center gap-2"
 >
-  🚀 {SITE?.name}
+<Image 
+src={Logo}
+alt={SITE.name}
+class="w-8 h-8 md:w-10 md:h-10"
+/>{SITE?.name}
 </span>

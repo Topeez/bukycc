@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Great";
+  src: url("../fonts/great.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/pacific.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);
@@ -89,4 +101,36 @@
 
 .dd *:first-child {
   margin-top: 0;
+}
+
+@keyframes entrance {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glow {
+  0%, 100% { filter: drop-shadow(0 0 10px white); }
+  50% { filter: drop-shadow(0 0 20px red); }
+}
+
+@keyframes subtle-movement {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.reaper {
+  width: 300px;
+  height: auto;
+  animation: entrance 2s ease-out, glow 3s infinite alternate, subtle-movement 4s infinite ease-in-out;
+}
+
+.reaper-container {
+  animation: fadeInZoom 2s ease-out;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ff1bdc, #1056a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
