@@ -1,21 +1,86 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import { Image } from 'astro:assets';
-import Smrtak from "~/assets/images/smrtak.png"
+import HeroImageWithText from '~/components/swcookiescomponents/HeroImageWithText.astro';
+import HeroImage from "~/assets/images/hero-min.png"
+import Section from '~/components/swcookiescomponents/Section.astro';
+import Brouseni from "~/assets/images/buky_brouseni.png"
+import Monitoring from "~/assets/images/buky_monitoring.png"
+import Renovace from "~/assets/images/buky_renovace.png"
+import Opravy from "~/assets/images/buky_opravy.png"
+import Odpad from "~/assets/images/buky_odpad.png"
 ---
 
 <Layout >
   <!-- Hero Widget ******************* -->
-  <section class="w-full py-10 px-5 text-center">
-    <div class="max-w-2xl mx-auto reaper-container">
-      <h1 class="text-3xl md:text-7xl font-bold text-gray-900 dark:text-white font-[Great] my-5 text-gradient py-5">
-        Buky.cc
-      </h1>
-      <h2 class="text-center text-xl md:text-3xl font-bold text-gray-500 dark:text-white font-[Pacifico]">
-        Čištění a renovace odpadu bez nutnosti sekání do zdi kde jiní končí mi začínáme
-      </h2>
-      <Image src={Smrtak} alt="Smrták" class="max-w-[100%] w-[500px] mx-auto my-10 reaper" />
-      <p><em>Web pro vás připravujeme...</em></p>
+  <HeroImageWithText
+  id="uvod"
+    title="Buky.cc"
+    subtitle="Renovace a čištění odpadu bez sekání do zdí"
+    tagline="Kde jiní končí, my začínáme – moderní řešení pro všechny typy budov"
+    image={HeroImage.src}
+  />
+  <Section className="bg-gradient-to-b from-white via-slate-2100 to-slate-200" id="sluzby">
+      <h2 class="text-7xl font-bold text-slate-700 text-center font-[Great]">Služby</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 my-10">
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <img src={Renovace.src} alt="Renovace odpadního potrubí" class="w-full h-40 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-semibold">Renovace odpadního potrubí</h3>
+          <p class="mt-2">Profesionální renovace a opravy potrubí bez nutnosti výkopu.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <img src={Odpad.src} alt="Tlakové čištění odpadů" class="w-full h-40 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-semibold">Tlakové čištění odpadů</h3>
+          <p class="mt-2">Efektivní čištění odpadního potrubí tlakovou vodou.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <img src={Brouseni.src} alt="Frézování kanalizace" class="w-full h-40 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-semibold">Frézování kanalizace</h3>
+          <p class="mt-2">Odstranění pevných usazenin a kořenů v potrubí.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <img src={Monitoring.src} alt="Kamerový monitoring potrubí" class="w-full h-40 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-semibold">Kamerový monitoring potrubí</h3>
+          <p class="mt-2">Inspekce potrubí pomocí moderních kamerových systémů.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <img src={Opravy.src} alt="Bezvýkopové opravy" class="w-full h-40 object-cover rounded-md mb-4" />
+          <h3 class="text-xl font-semibold">Bezvýkopové opravy</h3>
+          <p class="mt-2">Opravy potrubí bez narušení povrchu terénu.</p>
+        </div>
+      </div>
+  </Section>
+
+  <!-- JAK TO FUNGUJE -->
+<!-- Jak to funguje Section -->
+<Section id="jak-to-funguje" className="bg-gradient-to-b from-slate-200 to-slate-2100">
+  <h2 class="text-7xl font-bold text-slate-700 text-center font-[Great] my-10">Jak to funguje?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-center">
+    <div class="p-6 flex flex-col items-center">
+      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">1</div>
+      <h3 class="text-xl font-semibold mt-4">Kontaktujte nás</h3>
+      <p class="mt-2">Zavolejte nám nebo vyplňte kontaktní formulář.</p>
     </div>
-  </section>
+    <div class="p-6 flex flex-col items-center">
+      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">2</div>
+      <h3 class="text-xl font-semibold mt-4">Diagnostika problému</h3>
+      <p class="mt-2">Provedeme inspekci a zjistíme rozsah poškození.</p>
+    </div>
+    <div class="p-6 flex flex-col items-center">
+      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">3</div>
+      <h3 class="text-xl font-semibold mt-4">Návrh řešení</h3>
+      <p class="mt-2">Navrhneme optimální řešení a poskytneme cenovou nabídku.</p>
+    </div>
+    <div class="p-6 flex flex-col items-center">
+      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">4</div>
+      <h3 class="text-xl font-semibold mt-4">Realizace opravy</h3>
+      <p class="mt-2">Opravu provedeme efektivně a profesionálně.</p>
+    </div>
+    <div class="p-6 flex flex-col items-center">
+      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">5</div>
+      <h3 class="text-xl font-semibold mt-4">Kontrola a záruka</h3>
+      <p class="mt-2">Po dokončení práce prověříme kvalitu a poskytneme záruku.</p>
+    </div>
+  </div>
+</Section>
 </Layout>
+ -->

@@ -1,5 +1,5 @@
 site:
-  name: Buky - smrťák vašeho odpadu
+  name: Buky
   site: 'https://buky.cc'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Buky - smrťák vašeho odpadu
+    default: Buky - renovace a čištění odpadu bez sekání do zdí
     template: '%s — Buky.cc'
   description: "Profesionální čištění a renovace odpadního potrubí bez sekání do zdí! Nabízíme tlakové a strojní čištění, frézování kanalizace, kamerový monitoring a trasování potrubí. Moderní bezvýkopová technologie umožňuje rychlou a efektivní opravu odpadního systému v panelových domech, školách, hotelech, podnicích i průmyslových objektech. Zajistíme minimální nepořádek a maximální životnost vašeho potrubí. Kontaktujte nás pro odborné řešení bez zbytečného stresu!"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Buky - smrťák vašeho odpadu
+    site_name: Buky - renovace a čištění odpadu bez sekání do zdí
     images:
       - url: '~/assets/images/default.png'
         width: 1200
