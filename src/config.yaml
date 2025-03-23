@@ -1,5 +1,5 @@
 site:
-  name: Buky
+  name: Buky.cc
   site: 'https://buky.cc'
   base: '/'
   trailingSlash: false
