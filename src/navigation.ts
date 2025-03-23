@@ -48,7 +48,6 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Zavolejte Bukyho', href: '#', target: '_blank' }],
 };
 
 export const footerData = {

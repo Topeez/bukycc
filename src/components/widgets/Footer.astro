@@ -34,9 +34,9 @@ const {ICO, address, email} = contactData;
     ICO: {ICO} <br>
     <a href="/informace-o-zpracovani-osobnich-udaju" class="text-sm dark:text-muted text-center underline">Informace o zpracování osobních údajů</a> | <a href="/terms" class="text-sm dark:text-muted text-center underline">Podmínky používání této webové aplikace</a>  
   </p>
-  <p class="w-full text-center">
-    {address} | {email}
-  </p>
+  <address class="w-full text-center">
+    <street>{address}</street> | <a href={`mailto:${email}`}>{email}</a>
+  </address>
 
   <div class="w-full text-center mx-auto flex flex-col md:flex-row justify-between items-center gap-2 mt-5">
    
