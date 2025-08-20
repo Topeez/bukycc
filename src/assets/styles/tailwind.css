@@ -3,17 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Great";
-  src: url("../fonts/great.ttf") format("truetype");
+  font-family: 'Great';
+  src: url('../fonts/great.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Pacifico";
-  src: url("../fonts/pacific.ttf") format("truetype");
+  font-family: 'Pacifico';
+  src: url('../fonts/pacific.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+:root {
+  --cont-max-w: 1440px;
+  --cont-px: 3vw;
+}
+
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);
@@ -30,15 +36,19 @@
   .text-muted {
     color: var(--aw-color-text-muted);
   }
+
+  .cs-container {
+    @apply mx-auto px-[var(--cont-px)] max-w-[var(--cont-max-w)];
+  }
 }
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center rounded-full border-gray-400 border bg-transparent font-medium text-center text-base text-page leading-snug transition py-3.5 px-6 md:px-8 ease-in duration-200 focus:ring-blue-500 focus:ring-offset-blue-200 focus:ring-2 focus:ring-offset-2 hover:bg-gray-100 hover:border-gray-600 dark:text-slate-300 dark:border-slate-500 dark:hover:bg-slate-800 dark:hover:border-slate-800 cursor-pointer;
+    @apply inline-flex justify-center items-center bg-transparent hover:bg-purple-600 dark:hover:bg-slate-800 px-6 md:px-8 py-3.5 border border-gray-400 hover:border-gray-600 dark:border-slate-500 dark:hover:border-slate-800 rounded-full focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 focus:ring-offset-blue-200 font-medium text-page dark:text-slate-300 text-base text-center leading-snug transition duration-200 ease-in cursor-pointer;
   }
 
   .btn-primary {
-    @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
+    @apply bg-primary hover:bg-secondary dark:bg-primary dark:hover:bg-secondary border-primary hover:border-secondary dark:border-primary dark:hover:border-secondary font-semibold text-white hover:text-white dark:text-white btn;
   }
 
   .btn-secondary {
@@ -46,12 +56,12 @@
   }
 
   .btn-tertiary {
-    @apply btn border-none shadow-none text-muted hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
+    @apply shadow-none border-none text-muted hover:text-gray-900 dark:hover:text-white dark:text-gray-400 btn;
   }
 }
 
 #header.scroll > div:first-child {
-  @apply bg-page md:bg-white/90 md:backdrop-blur-md;
+  @apply bg-page md:bg-white/70 md:backdrop-blur-lg;
   box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
 }
 .dark #header.scroll > div:first-child,
@@ -90,11 +100,11 @@
   @apply transition;
 }
 [data-aw-toggle-menu].expanded g > path:first-child {
-  @apply -rotate-45 translate-y-[15px] translate-x-[-3px];
+  @apply -rotate-45 translate-x-[-3px] translate-y-[15px];
 }
 
 [data-aw-toggle-menu].expanded g > path:last-child {
-  @apply rotate-45 translate-y-[-8px] translate-x-[14px];
+  @apply rotate-45 translate-x-[14px] translate-y-[-8px];
 }
 
 /* To deprecated */
@@ -104,24 +114,43 @@
 }
 
 @keyframes entrance {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes glow {
-  0%, 100% { filter: drop-shadow(0 0 10px white); }
-  50% { filter: drop-shadow(0 0 20px red); }
+  0%,
+  100% {
+    filter: drop-shadow(0 0 10px white);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px red);
+  }
 }
 
 @keyframes subtle-movement {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .reaper {
   width: 300px;
   height: auto;
-  animation: entrance 2s ease-out, glow 3s infinite alternate, subtle-movement 4s infinite ease-in-out;
+  animation:
+    entrance 2s ease-out,
+    glow 3s infinite alternate,
+    subtle-movement 4s infinite ease-in-out;
 }
 
 .reaper-container {
@@ -138,26 +167,30 @@
 /* Shaky animation of an icon */
 
 .shaky {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
-
 }
 
 /* Fade in and zoom in animation */
@@ -197,7 +230,11 @@
 /* Bounce animation*/
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {

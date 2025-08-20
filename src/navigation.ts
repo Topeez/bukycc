@@ -41,7 +41,7 @@ export const headerData = {
     },
     {
       text: 'Reference',
-      href: '#',
+      href: '#reference',
     },
     {
       text: 'Kontakt',

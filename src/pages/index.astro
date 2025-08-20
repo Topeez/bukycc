@@ -21,35 +21,35 @@ import { Image } from 'astro:assets';
   id="uvod"
     title="Buky.cc"
     subtitle="Renovace a čištění odpadu bez sekání do zdí"
-    tagline="Kde jiní končí, my začínáme – moderní řešení pro všechny typy budov"
+    tagline="Kde jiní končí, my začínáme - moderní řešení pro všechny typy budov"
     image={HeroImage.src}
   />
   <Section className="bg-gradient-to-b from-white via-slate-2100 to-slate-200 reaper-container" id="sluzby">
-      <h2 class="text-7xl font-bold text-slate-700 text-center font-[Great]">Služby</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 my-10">
-        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-          <Image src={Renovace} alt="Renovace odpadního potrubí" class="w-full h-40 object-cover rounded-md mb-4" />
-          <h3 class="text-xl font-semibold">Renovace odpadního potrubí</h3>
+      <h2 class="font-[Great] font-bold text-slate-700 text-7xl text-center">Služby</h2>
+      <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 my-10">
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+          <Image src={Renovace} alt="Renovace odpadního potrubí" class="mb-4 rounded-md w-full h-40 object-cover" />
+          <h3 class="font-semibold text-xl">Renovace odpadního potrubí</h3>
           <p class="mt-2">Profesionální renovace a opravy potrubí bez nutnosti výkopu.</p>
         </div>
-        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-          <Image src={Odpad} alt="Tlakové čištění odpadů" class="w-full h-40 object-cover rounded-md mb-4" />
-          <h3 class="text-xl font-semibold">Tlakové čištění odpadů</h3>
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+          <Image src={Odpad} alt="Tlakové čištění odpadů" class="mb-4 rounded-md w-full h-40 object-cover" />
+          <h3 class="font-semibold text-xl">Tlakové čištění odpadů</h3>
           <p class="mt-2">Efektivní čištění odpadního potrubí tlakovou vodou.</p>
         </div>
-        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-          <Image src={Brouseni} alt="Frézování kanalizace" class="w-full h-40 object-cover rounded-md mb-4" />
-          <h3 class="text-xl font-semibold">Frézování kanalizace</h3>
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+          <Image src={Brouseni} alt="Frézování kanalizace" class="mb-4 rounded-md w-full h-40 object-cover" />
+          <h3 class="font-semibold text-xl">Frézování kanalizace</h3>
           <p class="mt-2">Odstranění pevných usazenin a kořenů v potrubí.</p>
         </div>
-        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-          <Image src={Monitoring} alt="Kamerový monitoring potrubí" class="w-full h-40 object-cover rounded-md mb-4" />
-          <h3 class="text-xl font-semibold">Kamerový monitoring potrubí</h3>
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+          <Image src={Monitoring} alt="Kamerový monitoring potrubí" class="mb-4 rounded-md w-full h-40 object-cover" />
+          <h3 class="font-semibold text-xl">Kamerový monitoring potrubí</h3>
           <p class="mt-2">Inspekce potrubí pomocí moderních kamerových systémů.</p>
         </div>
-        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-          <Image src={Opravy} alt="Bezvýkopové opravy" class="w-full h-40 object-cover rounded-md mb-4" />
-          <h3 class="text-xl font-semibold">Bezvýkopové opravy</h3>
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+          <Image src={Opravy} alt="Bezvýkopové opravy" class="mb-4 rounded-md w-full h-40 object-cover" />
+          <h3 class="font-semibold text-xl">Bezvýkopové opravy</h3>
           <p class="mt-2">Opravy potrubí bez narušení povrchu terénu.</p>
         </div>
       </div>
@@ -58,62 +58,62 @@ import { Image } from 'astro:assets';
   <!-- JAK TO FUNGUJE -->
 <!-- Jak to funguje Section -->
 <Section id="jak-to-funguje" className="bg-gradient-to-b from-slate-200 to-slate-2100 reaper-container">
-  <h2 class="text-7xl font-bold text-slate-700 text-center font-[Great] my-10">Jak to funguje?</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-center">
-    <div class="p-6 flex flex-col items-center">
-      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">1</div>
-      <h3 class="text-xl font-semibold mt-4">Kontaktujte nás</h3>
+  <h2 class="my-10 font-[Great] font-bold text-slate-700 text-7xl text-center">Jak to funguje?</h2>
+  <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-center">
+    <div class="flex flex-col items-center p-6">
+      <div class="flex justify-center items-center bg-purple-600 rounded-full w-16 h-16 font-bold text-white text-2xl">1</div>
+      <h3 class="mt-4 font-semibold text-xl">Kontaktujte nás</h3>
       <p class="mt-2">Zavolejte nám nebo vyplňte kontaktní formulář.</p>
     </div>
-    <div class="p-6 flex flex-col items-center">
-      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">2</div>
-      <h3 class="text-xl font-semibold mt-4">Diagnostika problému</h3>
+    <div class="flex flex-col items-center p-6">
+      <div class="flex justify-center items-center bg-purple-600 rounded-full w-16 h-16 font-bold text-white text-2xl">2</div>
+      <h3 class="mt-4 font-semibold text-xl">Diagnostika problému</h3>
       <p class="mt-2">Provedeme inspekci a zjistíme rozsah poškození.</p>
     </div>
-    <div class="p-6 flex flex-col items-center">
-      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">3</div>
-      <h3 class="text-xl font-semibold mt-4">Návrh řešení</h3>
+    <div class="flex flex-col items-center p-6">
+      <div class="flex justify-center items-center bg-purple-600 rounded-full w-16 h-16 font-bold text-white text-2xl">3</div>
+      <h3 class="mt-4 font-semibold text-xl">Návrh řešení</h3>
       <p class="mt-2">Navrhneme optimální řešení a poskytneme cenovou nabídku.</p>
     </div>
-    <div class="p-6 flex flex-col items-center">
-      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">4</div>
-      <h3 class="text-xl font-semibold mt-4">Realizace opravy</h3>
+    <div class="flex flex-col items-center p-6">
+      <div class="flex justify-center items-center bg-purple-600 rounded-full w-16 h-16 font-bold text-white text-2xl">4</div>
+      <h3 class="mt-4 font-semibold text-xl">Realizace opravy</h3>
       <p class="mt-2">Opravu provedeme efektivně a profesionálně.</p>
     </div>
-    <div class="p-6 flex flex-col items-center">
-      <div class="w-16 h-16 bg-slate-700 text-white rounded-full flex items-center justify-center text-2xl font-bold">5</div>
-      <h3 class="text-xl font-semibold mt-4">Kontrola a záruka</h3>
+    <div class="flex flex-col items-center p-6">
+      <div class="flex justify-center items-center bg-purple-600 rounded-full w-16 h-16 font-bold text-white text-2xl">5</div>
+      <h3 class="mt-4 font-semibold text-xl">Kontrola a záruka</h3>
       <p class="mt-2">Po dokončení práce prověříme kvalitu a poskytneme záruku.</p>
     </div>
   </div>
 </Section>
-<Section class="bg-[#E5E5E5] py-16 px-6 md:px-12">
-  <h2 class="text-7xl font-bold text-slate-700 text-center font-[Great] my-10">Naši spokojení zákazníci</h2>
+<Section id="reference" class="bg-[#E5E5E5] px-6 md:px-12 py-16">
+  <h2 class="my-10 font-[Great] font-bold text-slate-700 text-7xl text-center">Naši spokojení zákazníci</h2>
 
-  <div class="grid md:grid-cols-3 gap-8">
+  <div class="gap-8 grid md:grid-cols-3">
     <!-- Reference 1 -->
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <Image src={Spahotel} alt="Hotel EuroSpa logo" class="mb-4 mx-auto w-16 rounded-full border-2 shadow-sm" />
-      <p class="text-pink-400 font-semibold text-lg font-[Pacifico] mb-2">Hotel EuroSpa, Karlovy Vary</p>
-      <p class="text-gray-700 font-[Open Sans] text-sm">
+    <div class="bg-white shadow-md p-6 rounded-2xl">
+      <Image src={Spahotel} alt="Hotel EuroSpa logo" class="shadow-sm mx-auto mb-4 border-2 rounded-full w-16" />
+      <p class="mb-2 font-[Pacifico] font-semibold text-pink-400 text-lg">Hotel EuroSpa, Karlovy Vary</p>
+      <p class="font-[Open text-gray-700 text-sm Sans]">
         "Díky Bukymu jsme během jednoho dne vyřešili problém s ucpanými odpady bez nutnosti stavebních úprav. Profesionální přístup a špičková technologie nás přesvědčily."
       </p>
     </div>
 
     <!-- Reference 2 -->
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-    <Image src={Primavera} alt="ZŠ Primavera logo" class="mb-4 mx-auto w-16 rounded-full border-2 shadow-sm" />
-      <p class="text-pink-400 font-semibold text-lg font-[Pacifico] mb-2">ZŠ Primavera, Praha 6</p>
-      <p class="text-gray-700 font-[Open Sans] text-sm">
+    <div class="bg-white shadow-md p-6 rounded-2xl">
+    <Image src={Primavera} alt="ZŠ Primavera logo" class="shadow-sm mx-auto mb-4 border-2 rounded-full w-16" />
+      <p class="mb-2 font-[Pacifico] font-semibold text-pink-400 text-lg">ZŠ Primavera, Praha 6</p>
+      <p class="font-[Open text-gray-700 text-sm Sans]">
         "Moderní monitoring a bezvýkopová renovace odpadního systému proběhla rychle a bez omezení provozu školy. Doporučujeme každé veřejné instituci!"
       </p>
     </div>
 
     <!-- Reference 3 -->
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <Image src={Skalka} alt="Bytový dům Skalka logo" class="mb-4 mx-auto w-16 rounded-full border-2 shadow-sm" />
-      <p class="text-pink-400 font-semibold text-lg font-[Pacifico] mb-2">Bytový dům Skalka, Ostrava</p>
-      <p class="text-gray-700 font-[Open Sans] text-sm">
+    <div class="bg-white shadow-md p-6 rounded-2xl">
+      <Image src={Skalka} alt="Bytový dům Skalka logo" class="shadow-sm mx-auto mb-4 border-2 rounded-full w-16" />
+      <p class="mb-2 font-[Pacifico] font-semibold text-pink-400 text-lg">Bytový dům Skalka, Ostrava</p>
+      <p class="font-[Open text-gray-700 text-sm Sans]">
         "Renovace kanalizace ve vícepodlažním domě bez bourání? Nevěřili jsme, dokud jsme to nezažili. BUKY je opravdu expertem ve svém oboru."
       </p>
     </div>

@@ -27,30 +27,30 @@ const {ICO, address, email} = contactData;
 ---
 
 <footer
-  class:list={[{ dark: theme === 'dark' }, 'my-5 relative border-t border-gray-200 dark:border-slate-800 not-prose']}
+  class:list={[{ dark: theme === 'dark' }, 'my-5 relative border-t border-gray-200 dark:border-slate-800 not-prose cs-container']}
 >
   <Logo className="my-5" />
   <p class="w-full text-center">
     ICO: {ICO} <br>
-    <a href="/informace-o-zpracovani-osobnich-udaju" class="text-sm dark:text-muted text-center underline">Informace o zpracování osobních údajů</a> | <a href="/terms" class="text-sm dark:text-muted text-center underline">Podmínky používání této webové aplikace</a>  
+    <a href="/informace-o-zpracovani-osobnich-udaju" class="dark:text-muted text-sm text-center underline">Informace o zpracování osobních údajů</a> | <a href="/terms" class="dark:text-muted text-sm text-center underline">Podmínky používání této webové aplikace</a>  
   </p>
   <address class="w-full text-center">
     <street>{address}</street> | <a href={`mailto:${email}`}>{email}</a>
   </address>
 
-  <div class="w-full text-center mx-auto flex flex-col md:flex-row justify-between items-center gap-2 mt-5">
+  <img
+  class="mx-auto mt-5 w-16 md:w-16"
+  src="https://swcookies.com/_astro/swc_logo_50.8NAVAE2m_5xFeo.webp"
+  alt="Swcookies logo logo"
+  loading="lazy"
+/>
+  <div class="flex md:flex-row flex-col justify-between items-center gap-2 mx-auto mt-5 w-full text-center">
    
-    <p class="text-sm mr-4 dark:text-muted w-full">
-     {new Date().getFullYear()} Made by <a class="text-amber-950 font-bold underline dark:text-mute" href="https://swcookies.com/">
+    <p class="mr-4 w-full dark:text-muted text-sm">
+     {new Date().getFullYear()} Made by <a class="font-bold text-amber-950 dark:text-mute underline" href="https://swcookies.com/">
         Software Cookies Team
       </a>
       · Všechna práva vyhrazena.
     </p>
   </div>
-  <img
-  class="w-16 md:w-16 mx-auto mt-5"
-  src="https://swcookies.com/_astro/swc_logo_50.8NAVAE2m_5xFeo.webp"
-  alt="Swcookies logo logo"
-  loading="lazy"
-/>
 </footer>

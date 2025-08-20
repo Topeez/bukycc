@@ -20,66 +20,66 @@ const {phone, email} = contactData;
 
 <section
   id={id}
-  class="relative w-full grid grid-cols-1 md:grid-cols-12 items-center py-16 px-6 md:px-12 lg:px-20 bg-cover bg-center text-white min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh] xl:min-h-[80vh] 2xl:min-h-[90vh] gap-5"
+  class="relative items-center gap-5 grid grid-cols-1 md:grid-cols-12 bg-cover bg-center px-6 md:px-12 lg:px-20 py-16 w-full min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh] 2xl:min-h-[90vh] xl:min-h-[80vh] text-white"
   style={`background-image: url('${image}')`}
 >
   <!-- Gradient Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-[rgba(255,27,220,0.2)] to-[rgba(16,86,165,0.2)] z-0"></div>
+  <div class="z-0 absolute inset-0 bg-gradient-to-b from-[rgba(255,27,220,0.2)] to-[rgba(16,86,165,0.2)]"></div>
 
   <div
-    class="col-span-1 md:col-span-6 relative z-10 max-w-4xl text-center md:text-left bg-white bg-opacity-90 p-4 rounded-lg shadow-2xl text-black grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-8"
+    class="z-10 relative gap-4 md:gap-8 grid grid-cols-1 md:grid-cols-12 col-span-1 md:col-span-6 bg-white bg-opacity-90 shadow-2xl p-5 rounded-lg max-w-4xl text-black md:text-left text-center"
   >
-    <div class="col-span-1 md:col-span-7 items-center justify-center align-middle reaper-container">
+    <div class="justify-center items-center col-span-1 md:col-span-7 align-middle reaper-container">
       {
         title && (
-          <p class="text-2xl md:text-5xl font-bold leading-tight font-[Great] text-slate-700 mb-10">
+          <p class="mb-10 font-[Great] font-bold text-slate-700 text-3xl md:text-5xl leading-tight">
             Kdy kontaktovat Bukyho?
           </p>
         )
       }
-      <ul class="text-left w-full">
-        <li class="text-xl md:text-2xl mt-4 flex flex-row gap-1 items-center">
+      <ul class="w-full text-left">
+        <li class="flex flex-row items-center gap-1 mt-4 text-xl md:text-2xl">
           <Icon name="tabler:circle-check" class="text-purple-600 text-3xl" />Renovace odpadního potrubí
         </li>
-        <li class="text-xl md:text-2xl mt-4 flex flex-row gap-1 items-center">
+        <li class="flex flex-row items-center gap-1 mt-4 text-xl md:text-2xl">
           <Icon name="tabler:circle-check" class="text-purple-600 text-3xl" />Tlakové čištění odpadů
         </li>
-        <li class="text-xl md:text-2xl mt-4 flex flex-row gap-1 items-center">
+        <li class="flex flex-row items-center gap-1 mt-4 text-xl md:text-2xl">
           <Icon name="tabler:circle-check" class="text-purple-600 text-3xl" />Frézování kanalizace
         </li>
-        <li class="text-xl md:text-2xl mt-4 flex flex-row gap-1 items-center">
+        <li class="flex flex-row items-center gap-1 mt-4 text-xl md:text-2xl">
           <Icon name="tabler:circle-check" class="text-purple-600 text-3xl" />Kamerový monitoring potrubí
         </li>
-        <li class="text-xl md:text-2xl mt-4 flex flex-row gap-1 items-center">
+        <li class="flex flex-row items-center gap-1 mt-4 text-xl md:text-2xl">
           <Icon name="tabler:circle-check" class="text-purple-600 text-3xl" />Bezvýkopové opravy
         </li>
       </ul>
     </div>
-<div class="col-span-1 md:col-span-5">
-  <Icon name="tabler:mail" class="text-gray-600 mt-10  hidden md:block self-center bounce" style={{
+<div class="flex flex-col items-center col-span-1 md:col-span-5">
+  <Icon name="tabler:mail" class="hidden md:block self-center mt-10 text-gray-600 bounce" style={{
     fontSize: '8rem',
     transform: 'rotate(10deg)',
   }}/>
   <br>
-  <a href="mailto:info@buky.cc" class="btn btn-primary mx-auto self-center bg-slate-700 text-white border-2 border-white">{email}</a>
+  <a href="mailto:info@buky.cc" class="self-center bg-slate-700 mx-auto border-2 border-white text-white btn">{email}</a>
 </div>
 
   </div>
 
   <div
-    class="col-span-1 md:col-span-6 relative z-10 max-w-2xl flex flex-col items-center justify-center bg-opacity-80 p-4 rounded-lg"
+    class="z-10 relative flex flex-col justify-center items-center col-span-1 md:col-span-6 bg-opacity-80 p-4 rounded-lg max-w-2xl"
   >
-    <!-- {title && <h1 class="text-4xl md:text-5xl font-bold leading-tight font-[Great]">{title}</h1>}
-    {subtitle && <h2 class="text-xl md:text-2xl mt-4">{subtitle}</h2>}
-    {tagline && <p class="text-lg mt-2 italic">{tagline}</p>}
+    <!-- {title && <h1 class="font-[Great] font-bold text-4xl md:text-5xl leading-tight">{title}</h1>}
+    {subtitle && <h2 class="mt-4 text-xl md:text-2xl">{subtitle}</h2>}
+    {tagline && <p class="mt-2 text-lg italic">{tagline}</p>}
     {content && <div class="mt-6">{content}</div>}
-    {actions && <div class="mt-6 flex flex-wrap gap-4">{actions}</div>} -->
+    {actions && <div class="flex flex-wrap gap-4 mt-6">{actions}</div>} -->
     <Image
       src={LogoImage}
       alt="Buky.cc - oficiální logo"
-      class="w-full h-full self-center reaper mx-auto shadow-inner"
+      class="self-center shadow-inner mx-auto w-full h-full reaper"
     />
-    <a href={`tel:${phone}`} class="btn btn-primary mx-auto self-center bg-slate-700 text-white border-2 border-white">
+    <a href={`tel:${phone}`} class="self-center bg-slate-700 mx-auto border-2 border-white text-white btn">
       {phone}
     </a>
   </div>
