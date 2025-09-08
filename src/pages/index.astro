@@ -25,31 +25,32 @@ import { Image } from 'astro:assets';
     image={HeroImage.src}
   />
   <Section className="bg-gradient-to-b from-white via-slate-2100 to-slate-200 reaper-container" id="sluzby">
-      <h2 class="font-[Great] font-bold text-slate-700 text-7xl text-center">Služby</h2>
+      <p class="md:-mb-4 font-bold text-muted text-xs text-center uppercase">Služby</p>
+      <h2 class="mb-10 py-3 font-[Great] font-bold text-gradient text-7xl text-center">Co pro vás mohu zařídit?</h2>
       <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 my-10">
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
           <Image src={Renovace} alt="Renovace odpadního potrubí" class="mb-4 rounded-md w-full h-40 object-cover" />
-          <h3 class="font-semibold text-xl">Renovace odpadního potrubí</h3>
+          <h3 class="font-semibold text-purple-600 text-xl">Renovace odpadního potrubí</h3>
           <p class="mt-2">Profesionální renovace a opravy potrubí bez nutnosti výkopu.</p>
         </div>
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
           <Image src={Odpad} alt="Tlakové čištění odpadů" class="mb-4 rounded-md w-full h-40 object-cover" />
-          <h3 class="font-semibold text-xl">Tlakové čištění odpadů</h3>
+          <h3 class="font-semibold text-purple-600 text-xl">Tlakové čištění odpadů</h3>
           <p class="mt-2">Efektivní čištění odpadního potrubí tlakovou vodou.</p>
         </div>
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
           <Image src={Brouseni} alt="Frézování kanalizace" class="mb-4 rounded-md w-full h-40 object-cover" />
-          <h3 class="font-semibold text-xl">Frézování kanalizace</h3>
+          <h3 class="font-semibold text-purple-600 text-xl">Frézování kanalizace</h3>
           <p class="mt-2">Odstranění pevných usazenin a kořenů v potrubí.</p>
         </div>
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
           <Image src={Monitoring} alt="Kamerový monitoring potrubí" class="mb-4 rounded-md w-full h-40 object-cover" />
-          <h3 class="font-semibold text-xl">Kamerový monitoring potrubí</h3>
+          <h3 class="font-semibold text-purple-600 text-xl">Kamerový monitoring potrubí</h3>
           <p class="mt-2">Inspekce potrubí pomocí moderních kamerových systémů.</p>
         </div>
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
           <Image src={Opravy} alt="Bezvýkopové opravy" class="mb-4 rounded-md w-full h-40 object-cover" />
-          <h3 class="font-semibold text-xl">Bezvýkopové opravy</h3>
+          <h3 class="font-semibold text-purple-600 text-xl">Bezvýkopové opravy</h3>
           <p class="mt-2">Opravy potrubí bez narušení povrchu terénu.</p>
         </div>
       </div>
@@ -58,7 +59,8 @@ import { Image } from 'astro:assets';
   <!-- JAK TO FUNGUJE -->
 <!-- Jak to funguje Section -->
 <Section id="jak-to-funguje" className="bg-gradient-to-b from-slate-200 to-slate-2100 reaper-container">
-  <h2 class="my-10 font-[Great] font-bold text-slate-700 text-7xl text-center">Jak to funguje?</h2>
+  <p class="md:-mb-4 font-bold text-muted text-xs text-center uppercase">Know-how</p>
+  <h2 class="mb-10 py-3 font-[Great] font-bold text-gradient text-7xl text-center">Jak to funguje?</h2>
   <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-center">
     <div class="flex flex-col items-center p-6">
       <div class="flex justify-center items-center bg-purple-600 rounded-full w-16 h-16 font-bold text-white text-2xl">1</div>
@@ -88,13 +90,14 @@ import { Image } from 'astro:assets';
   </div>
 </Section>
 <Section id="reference" class="bg-[#E5E5E5] px-6 md:px-12 py-16">
-  <h2 class="my-10 font-[Great] font-bold text-slate-700 text-7xl text-center">Naši spokojení zákazníci</h2>
+  <p class="md:-mb-4 font-bold text-muted text-xs text-center uppercase">Reference</p>
+  <h2 class="mb-10 py-3 font-[Great] font-bold text-gradient text-7xl text-center">Naši spokojení zákazníci</h2>
 
   <div class="gap-8 grid md:grid-cols-3">
     <!-- Reference 1 -->
     <div class="bg-white shadow-md p-6 rounded-2xl">
       <Image src={Spahotel} alt="Hotel EuroSpa logo" class="shadow-sm mx-auto mb-4 border-2 rounded-full w-16" />
-      <p class="mb-2 font-[Pacifico] font-semibold text-pink-400 text-lg">Hotel EuroSpa, Karlovy Vary</p>
+      <p class="mb-2 font-[Pacifico] font-semibold text-purple-600 text-lg">Hotel EuroSpa, Karlovy Vary</p>
       <p class="font-[Open text-gray-700 text-sm Sans]">
         "Díky Bukymu jsme během jednoho dne vyřešili problém s ucpanými odpady bez nutnosti stavebních úprav. Profesionální přístup a špičková technologie nás přesvědčily."
       </p>
@@ -103,7 +106,7 @@ import { Image } from 'astro:assets';
     <!-- Reference 2 -->
     <div class="bg-white shadow-md p-6 rounded-2xl">
     <Image src={Primavera} alt="ZŠ Primavera logo" class="shadow-sm mx-auto mb-4 border-2 rounded-full w-16" />
-      <p class="mb-2 font-[Pacifico] font-semibold text-pink-400 text-lg">ZŠ Primavera, Praha 6</p>
+      <p class="mb-2 font-[Pacifico] font-semibold text-purple-600 text-lg">ZŠ Primavera, Praha 6</p>
       <p class="font-[Open text-gray-700 text-sm Sans]">
         "Moderní monitoring a bezvýkopová renovace odpadního systému proběhla rychle a bez omezení provozu školy. Doporučujeme každé veřejné instituci!"
       </p>
@@ -112,7 +115,7 @@ import { Image } from 'astro:assets';
     <!-- Reference 3 -->
     <div class="bg-white shadow-md p-6 rounded-2xl">
       <Image src={Skalka} alt="Bytový dům Skalka logo" class="shadow-sm mx-auto mb-4 border-2 rounded-full w-16" />
-      <p class="mb-2 font-[Pacifico] font-semibold text-pink-400 text-lg">Bytový dům Skalka, Ostrava</p>
+      <p class="mb-2 font-[Pacifico] font-semibold text-purple-600 text-lg">Bytový dům Skalka, Ostrava</p>
       <p class="font-[Open text-gray-700 text-sm Sans]">
         "Renovace kanalizace ve vícepodlažním domě bez bourání? Nevěřili jsme, dokud jsme to nezažili. BUKY je opravdu expertem ve svém oboru."
       </p>
