@@ -15,7 +15,7 @@ import LogoImage from '~/assets/images/smrtak.png';
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 import { contactData } from '~/CONTACT';
-const {phone, email} = contactData;
+const { phone, email } = contactData;
 ---
 
 <section
@@ -29,29 +29,38 @@ const {phone, email} = contactData;
   <div
     class="z-10 relative gap-4 md:gap-6 space-y-8 grid grid-cols-1 md:grid-cols-12 col-span-1 md:col-span-6 bg-white bg-opacity-40 shadow-2xl backdrop-blur-sm p-12 border rounded-xl max-w-4xl text-black md:text-left text-center"
   >
-    <div class="flex flex-col justify-center items-center gap-y-8 col-span-1 md:col-span-7 align-middle reaper-container">
+    <div
+      class="flex flex-col justify-center items-center gap-y-8 col-span-1 md:col-span-7 align-middle reaper-container"
+    >
       {
         title && (
           <div>
-              <h1 class="py-3 font-[Great] font-bold text-gradient text-4xl md:text-6xl">
-                Buky Cleaning
-              </h1>
-              <h2 class="font-sans font-bold text-slate-700 text-xl md:text-2xl">Čištění a renovace odpadů bez nutnosti sekání do zdi</h2>
+            <h1 class="py-3 font-[Great] font-bold text-gradient text-4xl md:text-6xl">Buky Cleaning</h1>
+            <h2 class="font-sans font-bold text-slate-700 text-xl md:text-2xl">
+              Čištění a renovace odpadů bez nutnosti sekání do zdi
+            </h2>
           </div>
         )
       }
 
-      <h2 class="p-3 w-full font-[Great] font-bold text-gradient text-2xl md:text-left text-center"><i>Tam, kde jiní končí, my začínáme</i></h2>
+      <h2 class="p-3 w-full font-[Great] font-bold text-gradient text-2xl md:text-left text-center">
+        <i>Tam, kde jiní končí, my začínáme</i>
+      </h2>
     </div>
-<div class="flex flex-col items-center col-span-1 md:col-span-5">
-  <Icon name="tabler:mail" class="hidden md:block self-center mt-10 text-purple-600 bounce" style={{
-    fontSize: '8rem',
-    transform: 'rotate(10deg)',
-  }}/>
-  <br>
-  <a href="mailto:info@buky.cc" class="self-center bg-slate-700 mx-auto border-2 border-white text-white btn">{email}</a>
-</div>
-
+    <div class="flex flex-col items-center col-span-1 md:col-span-5">
+      <Icon
+        name="tabler:mail"
+        class="hidden md:block self-center mt-10 text-purple-600 bounce"
+        style={{
+          fontSize: '8rem',
+          transform: 'rotate(10deg)',
+        }}
+      />
+      <br />
+      <a href="mailto:info@buky.cc" class="self-center bg-slate-700 mx-auto border-2 border-white text-white btn"
+        >{email}</a
+      >
+    </div>
   </div>
 
   <div

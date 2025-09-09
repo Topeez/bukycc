@@ -116,12 +116,11 @@ const Contact: React.FC<Props> = ({ className }) => {
     //Here will be a submit to the Strapi backend on url https://private.gswps.eu:10443/api/contak-from-antikoncepces where the payload will be {name, email, message}. For this call fetch api will be used. All possible errors will be handled.
     sendEmailFromEmailJS(e, { email, zprava, jmenoAPrijmenti });
 
-
-      alert('Zpráva byla úspěšně odeslána');
-      setOpenContactForm(false);
-      setJmenoAPrijmenti('');
-      setEmail('');
-      setZprava('');
+    alert('Zpráva byla úspěšně odeslána');
+    setOpenContactForm(false);
+    setJmenoAPrijmenti('');
+    setEmail('');
+    setZprava('');
   };
 
   return (

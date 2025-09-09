@@ -11,7 +11,7 @@ metadata:
   title:
     default: Buky - renovace a čištění odpadu bez sekání do zdí
     template: '%s — Buky.cc'
-  description: "Profesionální čištění a renovace odpadního potrubí bez sekání do zdí! Nabízíme tlakové a strojní čištění, frézování kanalizace, kamerový monitoring a trasování potrubí. Moderní bezvýkopová technologie umožňuje rychlou a efektivní opravu odpadního systému v panelových domech, školách, hotelech, podnicích i průmyslových objektech. Zajistíme minimální nepořádek a maximální životnost vašeho potrubí. Kontaktujte nás pro odborné řešení bez zbytečného stresu!"
+  description: 'Profesionální čištění a renovace odpadního potrubí bez sekání do zdí! Nabízíme tlakové a strojní čištění, frézování kanalizace, kamerový monitoring a trasování potrubí. Moderní bezvýkopová technologie umožňuje rychlou a efektivní opravu odpadního systému v panelových domech, školách, hotelech, podnicích i průmyslových objektech. Zajistíme minimální nepořádek a maximální životnost vašeho potrubí. Kontaktujte nás pro odborné řešení bez zbytečného stresu!'
   robots:
     index: true
     follow: true

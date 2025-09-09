@@ -4,40 +4,40 @@ export const headerData = {
   links: [
     {
       text: 'Úvod',
-      href: "#uvod",
+      href: '#uvod',
     },
     {
       text: 'Služby',
       links: [
         {
           text: 'Renovace odpadního potrubí',
-          href: "#sluzby",
+          href: '#sluzby',
         },
         {
           text: 'Tlakové čištění odpadů',
-          href: "#sluzby",
+          href: '#sluzby',
         },
         {
           text: 'Frézování kanalizace',
-          href: "#sluzby",
+          href: '#sluzby',
         },
         {
           text: 'Kamerový monitoring potrubí',
-          href: "#sluzby",
+          href: '#sluzby',
         },
         {
           text: 'Bezvýkopové opravy',
-          href: "#sluzby",
+          href: '#sluzby',
         },
       ],
     },
     {
       text: 'Jak to funguje',
-      href: "#jak-to-funguje",
+      href: '#jak-to-funguje',
     },
     {
       text: 'Proč Buky?',
-      href: "#",
+      href: '#',
     },
     {
       text: 'Reference',

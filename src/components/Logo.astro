@@ -2,13 +2,15 @@
 import { SITE } from 'astrowind:config';
 import LogoImage from '~/assets/images/buky_smrtak_logo.png';
 import { Image } from 'astro:assets';
-const {className} = Astro.props;
+const { className } = Astro.props;
 ---
 
 <div
-class={`self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-sm font-bold text-gray-900 whitespace-nowrap dark:text-white flex flex-row items-center gap-0 font-[Great] align-middle justify-center ${className}`}
+  class={`self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-sm font-bold text-gray-900 whitespace-nowrap dark:text-white flex flex-row items-center gap-0 font-[Great] align-middle justify-center ${className}`}
 >
-  <Image src={LogoImage} alt={SITE.name} class="w-14 h-14 md:w-14 md:h-14 self-center max-w-[60px] md:max-w-[100px]" /><span
-    class="text-4xl ml-2 self-center align-middle text-black">{SITE?.name}</span
-  >
+  <Image
+    src={LogoImage}
+    alt={SITE.name}
+    class="w-14 h-14 md:w-14 md:h-14 self-center max-w-[60px] md:max-w-[100px]"
+  /><span class="text-4xl ml-2 self-center align-middle text-black">{SITE?.name}</span>
 </div>
