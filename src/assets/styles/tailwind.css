@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/open-sans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Great';
   src: url('../fonts/great.ttf') format('truetype');
   font-weight: normal;

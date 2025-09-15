@@ -23,11 +23,9 @@ const { phone, email } = contactData;
   class="relative items-center gap-5 grid grid-cols-1 md:grid-cols-12 bg-cover bg-center px-6 md:px-12 lg:px-20 py-16 w-full min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh] 2xl:min-h-[90vh] xl:min-h-[80vh] text-white"
   style={`background-image: url('${image}')`}
 >
-  <!-- Gradient Overlay -->
-  <div class="z-0 absolute inset-0 bg-gradient-to-b from-[rgba(255,27,220,0.2)] to-[rgba(16,86,165,0.2)]"></div>
 
   <div
-    class="z-10 relative gap-4 md:gap-6 space-y-8 grid grid-cols-1 md:grid-cols-12 col-span-1 md:col-span-6 bg-white bg-opacity-40 shadow-2xl backdrop-blur-sm p-12 border rounded-xl max-w-4xl text-black md:text-left text-center"
+    class="z-10 relative gap-4 md:gap-6 space-y-8 grid grid-cols-1 md:grid-cols-12 col-span-1 md:col-span-6 bg-white bg-opacity-40 shadow-2xl backdrop-blur-sm mx-auto p-12 border rounded-xl max-w-4xl text-black md:text-left text-center"
   >
     <div
       class="flex flex-col justify-center items-center gap-y-8 col-span-1 md:col-span-7 align-middle reaper-container"
@@ -35,7 +33,7 @@ const { phone, email } = contactData;
       {
         title && (
           <div>
-            <h1 class="py-3 font-[Great] font-bold text-gradient text-4xl md:text-6xl">Buky Cleaning</h1>
+            <h1 class="py-6 font-[OpenSans] font-bold text-gradient text-4xl md:text-5xl">Buky Cleaning</h1>
             <h2 class="font-sans font-bold text-slate-700 text-xl md:text-2xl">
               Čištění a renovace odpadů bez nutnosti sekání do zdi
             </h2>
