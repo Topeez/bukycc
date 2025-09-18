@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroImageWithText from '~/components/swcookiescomponents/HeroImageWithText.astro';
-import HeroImage from '~/assets/images/hero-min.png';
+import HeroImage from '~/assets/images/hero-min.png'; // Keep as fallback
 import Section from '~/components/swcookiescomponents/Section.astro';
 import Brouseni from '~/assets/images/buky_brouseni.png';
 import Monitoring from '~/assets/images/buky_monitoring.png';
@@ -15,14 +15,16 @@ import { Image } from 'astro:assets';
 ---
 
 <Layout>
-  <!-- Hero Widget ******************* -->
+  <!-- Hero Widget with Video Background ******************* -->
   <HeroImageWithText
     id="uvod"
     title="Buky.cc"
     subtitle="Renovace a čištění odpadu bez sekání do zdí"
     tagline="Kde jiní končí, my začínáme - moderní řešení pro všechny typy budov"
-    image={HeroImage.src}
+    videoSrc="/videos/hero-video.mp4"
+    videoFallback={HeroImage.src}
   />
+  
   <Section className="bg-gradient-to-b from-white via-slate-2100 to-slate-200 reaper-container" id="sluzby">
     <p class="md:-mb-4 font-bold text-muted text-xs text-center uppercase">Služby</p>
     <h2 class="mb-10 py-3 font-[Great] font-bold text-gradient text-7xl text-center">Co pro vás mohu zařídit?</h2>
@@ -108,6 +110,7 @@ import { Image } from 'astro:assets';
       </div>
     </div>
   </Section>
+  
   <Section id="reference" class="bg-[#E5E5E5] px-6 md:px-12 py-16">
     <p class="md:-mb-4 font-bold text-muted text-xs text-center uppercase">Reference</p>
     <h2 class="mb-10 py-3 font-[Great] font-bold text-gradient text-7xl text-center">Naši spokojení zákazníci</h2>
