@@ -175,8 +175,8 @@
       transparent 20%,
       rgba(0, 0, 0, 0.1) 40%,
       rgba(0, 0, 0, 0.3) 60%,
-      rgba(0, 0, 0, 0.7) 85%,
-      rgba(0, 0, 0, 1) 100%
+      rgba(0, 0, 0, 0.5) 85%,
+      rgba(0, 0, 0, 0.7) 100%
     ),
     radial-gradient(
       ellipse 800px 400px at center 40%,
@@ -250,23 +250,3 @@
 }
 
 /* Bounce animation*/
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-.bounce {
-  animation: bounce 2s infinite;
-}

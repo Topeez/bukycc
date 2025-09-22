@@ -9,6 +9,9 @@ const Contact: React.FC<Props> = ({ className }) => {
   const [email, setEmail] = useState<string>('');
   const [zprava, setZprava] = useState<string>('');
 
+  const inputClasses =
+    'bg-white mt-2 p-2 border focus:border-purple-600 rounded-lg focus:outline-none w-full transition-colors duration-200 ease-in-out';
+
   //onSubmit
 
   const sendEmailFromEmailJS = async (
@@ -127,7 +130,7 @@ const Contact: React.FC<Props> = ({ className }) => {
     <div className={`w-full ${className} self-center`}>
       {!openContactForm && (
         <button
-          className="bg-gradient-to-br from-[#23455d] via-[#23455d] to-[#23455d] text-white font-semibold py-3 px-6 rounded hover:scale-105 transition-all duration-700 ease-linear shadow-lg hover:via-[#23455d] hover:to-[#23455d] hover:from-[#23455d]"
+          className="bg-gradient-to-br from-[#23455d] hover:from-[#23455d] via-[#23455d] hover:via-[#23455d] to-[#23455d] hover:to-[#23455d] shadow-lg px-6 py-3 rounded font-semibold text-white hover:scale-105 transition-all duration-700 ease-linear"
           onClick={() => {
             setOpenContactForm(!openContactForm);
           }}
@@ -137,38 +140,53 @@ const Contact: React.FC<Props> = ({ className }) => {
       )}
 
       {openContactForm && (
-        <div className="flex flex-col items-center justify-center w-full">
-          <form className="flex flex-col items-center justify-center w-full" onSubmit={handleSubmit}>
-            <input
-              className="p-2 m-2 rounded-lg w-full border bg-white"
-              type="text"
-              placeholder="Jméno a příjmení"
-              value={jmenoAPrijmenti}
-              onChange={({ target }) => {
-                setJmenoAPrijmenti(target.value);
-              }}
-            />
-            <input
-              className="p-2 m-2 rounded-lg w-full border bg-white"
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={({ target }) => {
-                setEmail(target.value);
-              }}
-            />
-            <textarea
-              className="p-2 m-2 rounded-lg w-full border bg-white"
-              placeholder="Zpráva"
-              value={zprava}
-              onChange={({ target }) => {
-                setZprava(target.value);
-              }}
-            />
+        <div className="flex flex-col justify-center items-center bg-white shadow-md p-5 rounded-xl w-full lg:w-3/4 cs-container">
+          <form className="flex flex-col justify-center items-center gap-4 w-full" onSubmit={handleSubmit}>
+            <div className="w-full text-left">
+              <label htmlFor="jmenoAPrijmenti" className="font-sans font-bold text-left">
+                Jméno a příjmení
+              </label>
+              <input
+                className={inputClasses}
+                type="text"
+                placeholder="Zadejte jméno a příjmení"
+                value={jmenoAPrijmenti}
+                onChange={({ target }) => {
+                  setJmenoAPrijmenti(target.value);
+                }}
+              />
+            </div>
+            <div className="w-full text-left">
+              <label htmlFor="email" className="font-sans font-bold text-left">
+                E-mail
+              </label>
+              <input
+                className={inputClasses}
+                type="email"
+                placeholder="Zadejte email"
+                value={email}
+                onChange={({ target }) => {
+                  setEmail(target.value);
+                }}
+              />
+            </div>
+            <div className="w-full text-left">
+              <label htmlFor="zprava" className="font-sans font-bold text-left">
+                Zpráva
+              </label>
+              <textarea
+                className={inputClasses}
+                placeholder="Zadejte zprávu"
+                value={zprava}
+                onChange={({ target }) => {
+                  setZprava(target.value);
+                }}
+              />
+            </div>
             <input
               type="submit"
-              value="odeslat"
-              className="bg-gradient-to-br from-[#23455d] via-[#23455d] to-[#23455d] text-white font-semibold py-3 px-6 rounded hover:scale-105 transition-all duration-700 ease-linear shadow-lg hover:via-[#23455d] hover:to-[#23455d] hover:from-[#23455d]"
+              value="Odeslat"
+              className="hover:text-white hover:scale-105 transition-all duration-400 ease-linear btn"
             />
           </form>
         </div>

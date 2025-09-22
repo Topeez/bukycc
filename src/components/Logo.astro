@@ -1,6 +1,6 @@
 ---
 import { SITE } from 'astrowind:config';
-import LogoImage from '~/assets/images/buky_smrtak_logo.png';
+import LogoImage from '~/assets/images/buky_smrtak_logo_2.png';
 import { Image } from 'astro:assets';
 const { className } = Astro.props;
 ---
@@ -11,6 +11,6 @@ const { className } = Astro.props;
   <Image
     src={LogoImage}
     alt={SITE.name}
-    class="w-14 h-14 md:w-14 md:h-14 self-center max-w-[60px] md:max-w-[100px]"
-  /><span class="text-4xl ml-2 self-center align-middle text-black">{SITE?.name}</span>
+    class="self-center w-14 md:w-14 max-w-[60px] md:max-w-[100px] h-14 md:h-14"
+  /><span class="self-center ml-2 text-black text-4xl align-middle">{SITE?.name}</span>
 </div>
