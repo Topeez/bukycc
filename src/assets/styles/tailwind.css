@@ -169,7 +169,8 @@
 }
 
 .vertical-fade-mask {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
       transparent 0%,
       transparent 20%,
