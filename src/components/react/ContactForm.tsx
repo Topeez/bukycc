@@ -15,7 +15,7 @@ const Contact: React.FC<Props> = ({ className }) => {
   //onSubmit
 
   const sendEmailFromEmailJS = async (
-    e: React.FormEvent<HTMLFormElement>,
+    _e: React.SyntheticEvent<HTMLFormElement>,
     { email, zprava, jmenoAPrijmenti }: { email: string; zprava: string; jmenoAPrijmenti: string }
   ) => {
     const templateParams = {
@@ -37,7 +37,7 @@ const Contact: React.FC<Props> = ({ className }) => {
     console.log(response);
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     //Validation of jmenoAPrijmenti can not be empty
     if (jmenoAPrijmenti.length === 0) {
